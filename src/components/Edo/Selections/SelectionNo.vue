@@ -41,6 +41,9 @@ export default defineComponent({
 			this.$emit("close");
 		},
 	},
+	mounted() {
+		this.$router.push({ name: "Form" });
+	}
 });
 </script>
 

@@ -135,7 +135,6 @@
 							ref="innInput"
 							:id="'innSelect' + index"
 							placeholder="ИНН"
-							:required="true"
 							:value="legalFormData?.inn"
 							class="form__input"
 							:companyId="index"
@@ -176,7 +175,6 @@
 							ref="legalAddressInput"
 							placeholder="Юридический Адрес"
 							:value="legalFormData?.legal_address"
-							:required="false"
 							class="form__input"
 							:onChange="(e: any) => updateLegalData('legal_address', e.target.value)"
 							property="legal_address"
@@ -187,7 +185,6 @@
 							ref="actualAddressInput"
 							placeholder="Фактический адрес"
 							:value="legalFormData?.actual_address"
-							:required="false"
 							class="form__input"
 							:onChange="(e: any) => updateLegalData('actual_address', e.target.value)"
 							property="actual_address"
@@ -207,7 +204,6 @@
 							ref="bicInput"
 							:id="'innSelect' + index"
 							placeholder="БИК"
-							:required="true"
 							:value="legalFormData?.bic"
 							:type="enumForTaxSystem"
 							class="form__input"
@@ -233,7 +229,6 @@
 							ref="paymentAccountInput"
 							placeholder="Р/с"
 							:value="legalFormData?.payment_account"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalData('payment_account', e.target.value)"
 						/>
@@ -245,7 +240,6 @@
 							placeholder="Телефон/факс"
 							type="tel"
 							:value="legalFormData?.telephone"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalData('telephone', e.target.value)"
 						/>
@@ -253,7 +247,6 @@
 							ref="emailInput"
 							placeholder="Email"
 							:value="legalFormData?.email"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalData('email', e.target.value)"
 						/>
@@ -261,7 +254,6 @@
 							ref="fioInput"
 							placeholder="ФИО подписанта"
 							:value="legalFormData?.fio"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalData('fio', e.target.value)"
 						/>
@@ -269,7 +261,6 @@
 							ref="postInput"
 							placeholder="Должность подписанта"
 							:value="legalFormData?.post"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalData('post', e.target.value)"
 						/>
@@ -277,7 +268,6 @@
 							ref="actionBasisInput"
 							placeholder="Основание действий подписанта"
 							:value="legalFormData?.action_basis"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalData('action_basis', e.target.value)"
 						/>
@@ -312,7 +302,6 @@
 							ref="personPostInput"
 							placeholder="Должность"
 							:value="legalFormPerson?.post"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalPerson('post', e.target.value)"
 						/>
@@ -320,6 +309,7 @@
 							ref="personFioInput"
 							placeholder="ФИО"
 							:value="legalFormPerson?.fio"
+							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalPerson('fio', e.target.value)"
 						/>
@@ -329,6 +319,7 @@
 							type="tel"
 							placeholder="Телефон"
 							:value="legalFormPerson?.telephone"
+							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateLegalPerson('telephone', e.target.value)"
 						/>
@@ -374,7 +365,6 @@
 							ref="managerPostInput"
 							placeholder="Должность"
 							:value="formManager?.post"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateManager('post', e.target.value)"
 						/>
@@ -398,7 +388,6 @@
 							ref="managerEmailInput"
 							placeholder="Email"
 							:value="formManager?.email"
-							:required="true"
 							class="form__input"
 							:onChange="(e: any) => updateManager('email', e.target.value)"
 						/>
